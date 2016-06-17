@@ -5,8 +5,17 @@
 nav {
 	background-color : #f0f0f0;
 	height : 50px;
+
 }
 
+a {
+	padding :20px;
+}
+
+
+.hear, .navigation, .description, .contents,.main-image{
+	width :100%;
+}
 
 @media screen and (min-width: 1200px) {
 	.header, .navigation, .description, .contents{
@@ -14,4 +23,4 @@ nav {
 		margin-left: auto;
 		margin-right:auto;
 	}
-}
+}	
