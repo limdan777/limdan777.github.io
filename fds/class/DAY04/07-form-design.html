@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML 폼(Form) 디자인</title>
+</head>
+<body>
+	
+	<h2>폼 디자인(설계)</h2>
+
+	<form
+		name="register_form" 
+		action="/register.php" 
+		method="POST">
+
+		<p>
+			<label for="user_id">ID</label> : <input id="user_id" name="user_id" type="text">
+		</p>
+		<p><label for="user_password" aria-label="password">PASSWORD</label> : <input type="password" name="user_password" id="user_password"></p>
+		<p><label for="user_email" id="user_email">Email</label> : <input type="email" name="user_email" id="user_email"></p>
+		<p>
+			<button type="submit">전송</button>
+			<button type="reset">초기</button>
+		</p>
+	</form>
+</body>
+</html>

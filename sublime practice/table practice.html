@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table practice</title>
+</head>
+<body>
+	<p id="metadata-table-summary">본 표는 4행 3열로 구성된</p>
+	<!-- WAI-ARIA로 설명 대치 -->
+	<table aria-describedby="metadata-table-summary">
+	<caption>적절한 테이블의 제목</caption>
+	<thead>
+		<tr>
+			<th scope="col">Elements</th>
+			<th scope="col">Description</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="3">Total Count</td>
+		</tr>
+	</tfoot>
+	</table>
+</body>
+</html>

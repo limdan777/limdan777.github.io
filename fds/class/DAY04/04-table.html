@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML표 (Table)</title>
+	<style>
+		/*축약요소에 마우스가 올라가면 UI 커서 모양이 도움말(?) 표시됨.*/
+		abbr[title] {
+			cursor : help;
+		}
+		
+		.demo {
+			border : "1";
+		}
+
+	</style>
+</head>
+<body>
+	
+
+	<p id="metadata-table-summary">본 표는 서머리이이이</p>
+	<table aria-describedby="metadata-table-sum">
+		<caption>적절한 제목</caption>
+		<tr>
+			<th>제목</th>
+			<th>제목</th>
+			<th>제목</th>
+		</tr>
+		<tr>
+			<td colspan="2">내용</td>
+			<!-- <td>내용</td> -->
+			<td>내용</td>
+		</tr>
+		<tr>
+			<td>내용</td>
+			<td rowspan="2">내용</td>
+			<td>내용</td>
+		</tr>
+		<tr>
+			<td>내용</td>
+			<!-- <td>내용</td> -->
+			<td>내용</td>
+		</tr>
+	</table>
+
+
+
+
+
+
+	<h2>문서 메타 데이터 표</h2>
+
+
+	<!-- 
+	표에 스타일 속성을 사용하지 않는다.CSS로 대체한다. 
+	border
+	bgcolor
+	cellpadding
+	cellspacing
+	-->
+	<table border="1">
+		<caption>적절한 테이블 제</caption>
+		<thead>
+			<tr>
+					<th>Element</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+
+		<tfoot>
+			<tr>
+				<td colspan="3">Total Count</td>
+			</tr>
+		</tfoot>
+				
+				<tr>
+					<th>
+						<code>&lt;base&gt;</code>
+					</th>
+					<td>
+						HTML Base요소는 문서에 포함된 <a target="_blank" href="https://ko.wikipedia.org/wiki/URL"><abbr title="hoho">url</abbr></a>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<code>&lt;element&gt;</code>
+					</th>
+				<td>
+					요소가 되어서 뭐시기 뭐시기
+				</td>
+			</tr>
+	</table>
+</body>
+</html>
