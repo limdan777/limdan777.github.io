@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>(X)HTML vs HTML5 Markup</title>
+	<link rel="stylesheet" href="style.css">
+	<script>
+		//문서에 input 요소를 생성한다.
+		//생성한 요소를 변수 my_inum_input에 참조한다.
+		var my_num_input = documenet.createElement('input');
+		//변수 my_num_input에 참조된 문서 객체 input 요소에 속성 (Attribute)을 설정한다.
+		my_num_input.setAttribute('type','number');
+		//조건(my_num_input 요소의 type속성이 'text'인가?) 확인
+		if (my_num_input.getAttribute('type') === 'text'){
+			console.log('input "number"유형을 지원하지 않습니다.');
+			//input[type="number"]를 지원하지 않는 브라우저 대응하는 코드.
+		} else {
+			console.log('input "number"유형을 지원합니다.')
+		}
+	</script>
+</head>
+<body>
+	<!-- HTML4.01 XHTML 1.0
+	#header+#gnb+#main+#sidebar+#footer -->
+	<div id="header"></div>
+	<div id="gnb"></div>
+	<div id="main"></div>
+	<div id="sidebar"></div>
+	<div id="footer"></div>
+
+	<!-- HTML5 Markup
+	header+nav+main+aside+footer -->
+	<!-- 모두 section 요소. 전부 header가 들어갈 수 있다. -->
+	<!-- 문서에서 main은 한번만.. -->
+	<!-- section vs article
+		section : 범용적
+		article : 독립적
+		nav
+		aside  -->
+	<header></header>
+	<nav></nav>
+	<section>
+		<article></article>
+	</section>
+	<main></main>
+	<aside></aside>
+	<footer></footer>
+
+</body>
+</html>
