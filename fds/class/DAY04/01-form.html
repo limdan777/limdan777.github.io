@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Form 디자인</title>
+</head>
+<body>
+	
+	<form name="register-form" action="" method="POST" enctype="">
+		<div>
+			<label for="register-id">ID</label>
+			<input id="register-id" type="text" placeholder="이름">
+		</div>
+		<div>
+			<label for="register-email">Email</label>
+			<input type="email" id="register-email" placeholder="user@email.com">
+		</div>
+		<div>
+			<label for="register-password">Password</label>
+			<input id="register-password" type="password">
+		</div>
+		<div>
+			<label for="register-user-gender">gender</label>
+			<label><input name="register-gender-a-type" type="radio">Male</label>
+			<label><input name="register-gender-a-type" type="radio">Female</label>
+		</div>
+
+		<hr>
+		
+		<div>
+			<label><input name="register-gener-b-type" type="radio">Male</label>
+			<label><input name="register-gener-b-type" type="radio">Female</label>
+		</div>
+
+		<div>
+			<h3>Hobby</h3>
+			<ul>
+				<li><label><input type="checkbox" value="book" name="hobby">Read a book</label></li>
+				<li><label><input type="checkbox" value="sleep" name="hobby">Sleeping</label></li>
+
+			</ul>
+			<input type="submit" value="제출">
+			<button types="reset">초기화</button>
+
+		</div>
+
+		<div>
+			<label for="register-upload">Upload</label>
+			<input multiple type="file" id="register-upload" name="register-upload">
+		</div>
+
+		<hr>
+
+		<div>
+			<textarea name="nim" id="ime" cols="30" rows="10"></textarea>
+		</div>
+
+		<hr>
+
+		<div>
+			<h3>Your Job</h3>
+			<select name="register-job">
+				<option value="">Select Your Job</option>
+				optgroup
+				<option value="instructor">Instructor</option>
+				<option value="student">Student</option>
+				<option value="manager">Manager</option>
+			</select>
+		</div>
+
+	</form>
+		<!-- submit, reset, button -->
+
+</body>
+</html>

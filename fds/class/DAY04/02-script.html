@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML 스크립트</title>
+	<!-- HTML 문서 내부에 JavaScript를 바로 사용할 때
+	<script type="text/javascript">-->
+	<script src="js/in-head-javascript.js"></script>
+</head>
+<body>
+	<script>
+	document.write("현재 사용자 환경은 온라인입니까?", window.navigator.onLie ? '네 온라인입니다' : '오프라인...')
+		//document.write('<h1>This is Javascript!</h1>');
+	</script>
+
+	<noscript>
+		<p>자바스크립트가 지원되지 않는 환경입니다.</p>
+	</noscript>
+</body>
+</html>
