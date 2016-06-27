@@ -1,0 +1,90 @@
+.reset-list ul , .reset-list ol , ul.reset-list, ol.reset-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.lecture-file-list a{
+	display : block;
+	text-decoration: none;
+	text-indent : 40px;
+	font-size : 2.38em;
+	background-repeat: no-repeat;
+}
+
+a[href^="http://"]{
+	background-image:url(../images/external-link.png);
+	color : #050505;
+	background-position : 0 8px;
+}
+
+a[href$="jpg"]{
+	background-image: url(../images/jpg.png);
+	color : #DB7300;
+}
+
+a[href$="ai"]{
+	background-image: url(../images/ai.png);
+	color : #2B200E;
+}
+
+a[href$="docs"]{
+	background-image: url(../images/docs.png);
+	color : #0067C2;
+}
+
+a[href$="flacs"]{
+	background-image: url(../images/flacs.png);
+	color : #5F1AD3;
+}
+
+a[href$="gifs"]{
+	background-image: url(../images/gifs.png);
+	color : #E7B900;
+}
+
+a[href$="htmls"]{
+	background-image: url(../images/htmls.png);
+	color : #BABABA;
+}
+
+a[href$="jss"]{
+	background-image: url(../images/jss.png);
+	color : #202020;
+}
+
+a[href$="mp3"]{
+	background-image: url(../images/mp3.png);
+	color : #1F00DA;
+}
+
+a[href$="pdf"]{
+	background-image: url(../images/pdf.png);
+	color :#C00000;
+}
+
+a[href$="png"]{
+	background-image: url(../images/png.png);
+	color :#C632DF;
+}
+
+a[href$="psd"]{
+	background-image: url(../images/psd.png);
+	color : #131646;
+}
+
+a[href$="tiffs"]{
+	background-image: url(../images/tiffs.png);
+	color : #680000;
+}
+
+a[href$="txt"]{
+	background-image: url(../images/txt.png);
+	color : #A4A4A4;
+}
+
+a[href$="xls"]{
+	background-image: url(../images/xls.png);
+	color : #66A200;
+}
