@@ -1,0 +1,33 @@
+.text,.image,.block {
+	width : 14em;
+	height : 8em;
+	margin :0.5em;
+	border:thick solid;
+	background:#fff;
+}
+
+.text{
+	border-color : #99f;
+	line-height: 8em;
+}
+
+.image {
+	border-color : #f99;
+	line-height: 8em;
+}
+
+.image img {
+	width : 50px;
+	height : 50px;
+	vertical-align: middle;
+}
+
+.block {
+	border-color : #ff4;
+}
+
+.block div {
+	border : dashed;
+	width :10em;
+}
+
