@@ -27,5 +27,26 @@
     yy 한 행 전체 붙여넣기.
     dw :delete words?
     u [undo]
-    Ctrl + r [다시 실행]
-    
+    Ctrl + r [다x시 실행]
+    Ctrl + f [아랫방]
+    Ctrl + b [윗 방향]
+    단어찾기 => :/W3
+    :%s/[대상단어]/[바꿀단어]
+    :vs . 스크린 나누기.
+    :sp : 
+    Ctrl + ww  화면 전환
+
+#띄어쓰기 옵션
+    :set nu
+    :set nonu
+    :set ts=2 (tab size)
+    :set sw=2 (set shift width)
+    :set ai (auto indent)
+    :set paste (붙여넣기 특화)
+    :colorscheme <색상 테마 이름>
+    :set paste 계단 현상 제거.
+
+#옵션 저장
+    $vi ~/.vimrc
+
+

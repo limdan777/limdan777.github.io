@@ -1,0 +1,22 @@
+.page{
+	background: #7045cf;
+	width :500px;
+	height : 333px;
+	margin:100px auto;
+	padding-top: 1.25rem;
+	padding-left: 1.25rem;
+}
+ 
+
+.page::before {
+	display :block;
+	content:attr(class);
+	color : #fff;
+	font-size : 1.375rem;
+}
+
+.inner-page {
+	background  : #111110;
+	width : 200px;
+	height : 300px;
+}

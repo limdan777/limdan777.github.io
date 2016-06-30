@@ -1,0 +1,26 @@
+/* 
+마진이 상하 방향으로 접혀지는 현상
+*/
+
+h1 {
+	margin-bottom : 1.88em;
+	font-weight : border;
+	font-weight: 900;
+	font-size :32px;
+	font-size : 2.2em;
+}
+
+p {
+	color : #323130;
+	font-size : 0.87em;
+}
+
+p a {
+	background: #000;
+	color : #fff;
+}
+
+p span {
+	background : #f00;
+	color : #ff0;
+}

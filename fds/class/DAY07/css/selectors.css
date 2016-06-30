@@ -1,0 +1,195 @@
+@charset "utf-8"
+@import url("common.css")
+
+/*
+속성 선택자
+[attr]
+[attr="value"] 
+[attr|="value"] 파이프 라인은 - 로 구분 되는 것을 찾는다.
+[attr~="value"] 공백으로 구분되는 .
+*/
+
+.container{
+	border : 1px dashed #cacaca;
+	padding :1em;
+}
+
+/*기본상태*/
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding : 0.88em;
+	color : #84888a;
+	background : #fff;
+}
+
+/*커서가 올라간 상태
+가상 클래스 Pseudo Class
+	실제 클래스를 주지 않더라도 (.hover class="hover")
+	자동으로 클래스 마냥 작동하기 때문에 
+*/
+.container p:hover {
+	color :#0c0d0d;
+	background : #bfbfbf;
+}
+
+/*커서로 누른 상태*/
+
+p:active {
+	background-color : #ffff9c;
+	color : #fff;
+}
+/*
+하이퍼링크 (<a href>)
+상태디자인(state design)
+상태 (유사, 의사) 클래스
+Pseudo Class
+
+:link | 기본상태
+:visited | 방문한 상태
+:hover | 커서 올라간 상태
+:active | 커서로 누르고 있는 상태
+:focus |키보드 포커싱 상태
+*/
+
+a {
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	text-decoration: none;
+	color : #363636;
+}
+
+a:visited {
+	color : #fc414b;
+}
+
+a:hover {
+	padding-bottom: 1px;
+	border-bottom: 2px dotted;
+}
+
+a:focus {
+	outline : 3px solid #fc414b;
+}
+
+a:focus:hover {
+	outline-offset : 10px;
+}
+
+
+
+.box {
+	display : inline-block;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	width :200px;
+	height :200px;
+	outline : none;
+	background-color : #213121;
+
+}
+
+.box:hover {
+	outline :10px solid #re4949;
+}
+
+.rounded-box {
+	width : 200px;
+	background-color : #eee;
+}
+
+.rounded-box :first-child {
+
+}
+
+:lang(ja) {
+	/*일본어 사용*/
+}
+
+:lang(es){
+	/*스페인어 사용*/
+}
+/*
+가상 요소
+Pseudo Element
+가상으로 요소(콘텐츠)를 만들어 줍니다.
+
+::first-line
+::first-letter
+::before
+::after
+*/
+
+/* 잡지디자인 드롭캡 (Drop Cap) ; 앞글자 하나를 키워주는 디자인*/
+
+.dropcap-demo{
+
+}
+
+.dropcap::first-letter {
+	font-size : 300%;
+	color : #ff0904;
+	line-height : 1;
+}
+
+.dropcap {
+	margin : 0;
+}
+
+/*
+가상요소
+::before
+::after
+*/
+
+.msg .before, .msg::before{
+	content : "Hi!";
+	color : #3a0099;
+}
+
+.msg .after, .msg::after{
+	content :'Hand Up!';
+	color: #604887;
+}
+
+/*접근성 과정에서 링크의 주소를 출력하는 스타일*/
+
+	 a::after{
+	 	content:'http://daum.orgggg';
+	 }
+
+
+@media print {
+
+}
+
+.parent *:not(a):not(p){
+	border :1px solid #b64926;
+}
+
+::-moz-selection {
+	background: #fc4b55;
+	color : #fff;
+}
+
+::selection {
+	text-shadow: 2px 2px 8px #6300b5;
+	cursor : move;
+	background : #fc4b55;
+	color : #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
