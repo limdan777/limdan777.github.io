@@ -1,0 +1,24 @@
+.parent-box {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top : 5%;	
+	height: 80px;
+	border : 3px solid #aea28f;
+}
+
+
+.ofa {
+	overflow : auto;
+}
+
+.ofv {
+	overflow: visible;
+}
+
+.ofs {
+	overflow: scroll;
+}
+
+.ofh {
+	overflow: hidden;
+}

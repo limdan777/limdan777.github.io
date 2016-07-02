@@ -1,0 +1,71 @@
+
+/*type.css */
+html {
+	font-size : 100%;
+}
+
+body {
+	width : 960px;
+	margin : 0 auto;
+	font-size : 1rem;
+	line-height: 1.5;
+/*	background-image : url(../images/leading-24px.png);*/
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+
+img +p {
+	margin-top : 1.5rem;
+}
+img {
+	vertical-align: middle;
+}
+
+.small-caps{
+	font-variant : small-caps;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.lowercase{
+	text-transform: lowercase;
+}
+.capitalize{
+	text-transform: capitalize;
+}
+
+/*font 속기형*/
+.font-short-properties {
+	font : 1.2rem/2rem Helvetica, Sans-Serif;
+	font : italic 1.2rem/2rem Helvetica, Sans-Serif;
+	font : bold 1.2rem/2rem Helvetica, Sans-Serif;
+	font : bold italic 1.2rem/2rem Helvetica, Sans-Serif;
+	font : italic bold 1.2rem/2rem Helvetica, Sans-Serif;
+	font : italic bold small-caps 1.2rem/2rem Helvetica, Sans-Serif;
+}
+
+.spoqa {
+	font-family: 'Spoqa Han Sans';
+	font-weight : 200;
+	letter-spacing : 0.0;
+	word-spacing: 0.05em;
+
+}
+
+/*
+IR 테크닉 : Image Replacement 기법
+*/
+.brand-tweetle{
+	overflow : hidden;
+	width : 32px;
+	height : 32px;
+	background-image :url("https://cdn4.iconfinder.com/data/icons/tweetle/tweetle_bandit.png");
+	background-repeat : no-repeat;
+	text-indent : -9999em;
+}
+
+.brand-tweetle a {
+	display : block;
+}
