@@ -1,0 +1,38 @@
+.parent {
+	/*float : left;*/
+	width : 720px;
+	margin-left: auto;
+	margin-right: auto;
+	/*border : 1px solid hsl(180, 3%, 93%);*/
+	/*padding :1rem;*/
+	background : #efefef;
+	margin-bottom: 2rem;
+}
+
+.child {
+	float: left;
+	width: 140px;
+	height: 100px;
+	text-align : center;
+	line-height: 100px;
+	color:#fff;
+}
+
+.clearfix::after {
+	content :'pseudo element';
+	visibility: hidden;
+	display : block;
+	clear : both;
+	height : 0;
+}
+
+.micro-clearfix::after {
+	content :'';
+	display : block;
+	clear : both;
+}
+
+.child:first-child{background : hsl(20,20%,40%);}
+.child:nth-child(2){background : hsl(140,20%,40%);
+height :140px;}
+.child:last-child{background : hsl(220,20%,40%);}

@@ -1,0 +1,67 @@
+.wrapper {
+	width : 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.half-width > *{
+	float : left;
+	width : 50%;
+	height : 231px;
+}
+
+.quad-width > * {
+	float : left;
+	width : 25%;
+	height : 231px;
+}
+
+.micro-clearfix::after {
+	content :'';
+	display : block;
+	clear : both;
+}
+
+.description-wrapper {
+	text-align: center;
+}
+
+.description {
+	text-align : center;
+}
+
+.description h2 {
+	margin-top: 55px;
+	font-size: 14px;
+	line-height: 1.1;
+	color: #464646;
+}
+
+.description p{
+	margin-left: 20px;
+	margin-right: 2	0px;
+	margin-top : 18px;
+	font-size : 12px;
+	line-height: 1.5;
+	color: #464646;
+	margin-bottom : 13px;
+}
+
+.description:hover {
+	background-color: #FFEFDB;
+}
+
+.twitter-logo {
+	border-top : 1px solid #464646;
+	padding-top: 15px;
+	padding-right :10px;
+	padding-left : 10px;
+	width: 20px;
+	height : 20px;
+}
+
+.twitter-logo:hover {
+	fill : #3C8AD6;
+}
+
+.
