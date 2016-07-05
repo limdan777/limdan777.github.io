@@ -16,6 +16,30 @@
 	height : 231px;
 }
 
+.description.left:hover::after {
+	content :'';
+	display :block;
+	position : absolute;
+	left : -20px;
+	top : 100px;
+	border-bottom: 20px solid transparent;
+	border-top: 20px solid transparent;
+	border-right : 20px solid #FFEFDB;
+}
+
+.description.right:hover::after {
+	content :'';
+	display :block;
+	position : absolute;
+	right : -20px;
+	top : 100px;
+	border-bottom: 20px solid transparent;
+	border-top: 20px solid transparent;
+	border-left : 20px solid #FFEFDB;
+}
+
+
+
 .micro-clearfix::after {
 	content :'';
 	display : block;
@@ -28,6 +52,7 @@
 
 .description {
 	text-align : center;
+	position:relative;
 }
 
 .description h2 {
@@ -49,6 +74,7 @@
 
 .description:hover {
 	background-color: #FFEFDB;
+
 }
 
 .twitter-logo {

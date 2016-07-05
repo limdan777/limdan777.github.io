@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	.parent-box {
+		width : 800px;
+		height : 1400px;
+		background-color : gray;
+	}
+
+	[class^="box"]{
+		width : 200px;
+		height : 100px;
+		margin: 10px;
+	}
+
+	.box1 {
+		width :0px;
+		height : 0px;
+		border-left :20px solid #f00;
+		border-bottom :20px solid transparent;
+		border-top :20px solid transparent;
+	}
+
+	.box2 {
+		position : absolute ;
+		background-color : red;
+		top : 30px;
+		left : 80px;	
+	}
+
+	.box3 {
+		position : fixed;
+		background-color: yellow;
+	}
+</style>
+<head>
+	<meta charset="UTF-8">
+	<title>Box position test</title>
+</head>
+<body>
+	<div class="parent-box">
+		<div class="box1"></div>
+		<div class="box2">box2</div>
+		<div class="box3">box3	</div>
+	</div>
+</body>
+</html>
