@@ -1,0 +1,42 @@
+body {
+	margin : 0;
+	height : 100vh;
+	background : url(../images/background.jpg) no-repeat center;
+	background-size : cover;
+	position : relative;
+}
+
+[class$="box"]{
+	width :100px;
+	height : 50px;
+	background-color: blue;
+	position : absolute;
+}
+
+.quote-box{
+	width : 50%;
+	height : 80px;
+	background-color: red;
+	left : 25%;
+	bottom : 0px;
+}
+
+.search-box{
+	top:0;
+	left:0;
+}
+
+.weather-box{
+	top:0;
+	right:0;
+}
+
+.setting-box{
+	bottom:0;
+	left:0;
+}
+
+.todo-box{
+	bottom:0;
+	right:0;
+}
