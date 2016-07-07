@@ -1,0 +1,96 @@
+*{
+	border: 1px black solid;
+}
+
+.header{
+	margin-top: 24px;
+	width : 100%;
+	height : 72px;
+	background-color: #eee;
+}
+
+.top-nav{
+	width : 960px;
+	height : 72px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ddd;
+}
+
+.top-nav-ul{
+	width : 100%;
+	height : 72px;
+}
+
+.logo {
+	float : left;
+	width: 80px;
+	height : 100%;
+	background-color: blue;
+}
+.find {
+	float : left;
+	width: 160px;
+	height :100%;
+	background-color: yellow;	
+}
+.start {
+	float : left;
+	width: 160px;
+	height :100%;
+	background-color: orange;	
+}
+.profile{
+	float: right;
+	width :160px;
+	height :100%;
+	background-color : blue;
+}
+
+main{
+	position : relative: ;
+	margin-top: 24px;
+	width: 100%;
+	height : 1320px;
+	background-color: #333;
+}
+
+.main-image{
+	width : 960px;
+	height : 420px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #bbb;
+}
+
+.search-bar{
+	width : 912px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-36px;
+	height : 72px;
+	background-color: #ccc;
+}
+
+.gallery-list{
+	margin-left: auto;
+	margin-right: auto;
+	width : 960px;
+}
+
+.gallery-list>li {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 24px;
+	float:left;
+	width : 300px;
+	height : 168px;
+	background-color: blue;
+}
+
+.footer{
+	width:100%;
+	height:144px;
+	background-color: #ddd;
+
+}
