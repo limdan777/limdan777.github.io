@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Box</title>
+	<style>
+		.parent{
+			position : relative;
+			width : 600px;
+			height : 300px;
+			background-color: blue;
+		}
+		.child{
+			position : absolute;
+			width : 100px;
+			height : 50px;
+			background-color : red;
+			top :50%;
+			left : 50%;
+			/*margin-left : 50px;*/
+			/*transform* 단점 : 크로스 브라우징이 안된다.*/
+			transform : translate(-50%,-50%);
+		}
+		.start {
+			position : relative;
+		}
+
+		.bye { 
+			
+		 }
+
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child"></div>
+		<span class="start">hi</span>
+		<span class="end">bye</span>
+	</div>
+	
+</body>
+</html>

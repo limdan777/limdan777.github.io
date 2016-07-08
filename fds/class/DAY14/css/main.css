@@ -1,0 +1,36 @@
+.navbar {
+	width :
+	background-color: blue;
+	height : 72px;
+}
+.navbar-left{
+	float : left;
+}
+
+.navbar-right {
+	float : right;
+}
+
+.main-image{
+	height : 480px;
+	background-image : url(../images/seven.jpg);
+	background-size : cover;
+}
+
+.main {
+	position : relative;
+}
+
+.search-bar {
+	position : absolute;
+	height : 96px;
+	background-color: blue;
+	left : 50%;
+	top : 0px;
+	transform: translateY(50%);
+	transform: translateX(-50%);
+}
+
+.card-gallery {
+
+}
