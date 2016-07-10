@@ -38,12 +38,10 @@ ul *{
 
 
 .search-bar {
-	position : absolute;
+	position : relative;
 	height : 96px;
 	background-color: blue;
-	left : 50%;
-	top : 0;
-	transform: translate(-50%,-50%);
+	top : -48px;
 }
 .footer {
 	width : 100%;
