@@ -1,10 +1,21 @@
 .navbar {
-	width :
 	background-color: blue;
+	color : white;
 	height : 72px;
+}
+
+.navbar *{
+	line-height: 72px;
+	vertical-align: middle;
+	height : 72px;
+	background-color: gray;
 }
 .navbar-left{
 	float : left;
+}
+
+ul *{
+	text-align: center;
 }
 
 .navbar-right {
@@ -21,16 +32,27 @@
 	position : relative;
 }
 
+.galleryCard {
+	padding-top: 72px;
+}
+
+
 .search-bar {
 	position : absolute;
 	height : 96px;
 	background-color: blue;
 	left : 50%;
-	top : 0px;
-	transform: translateY(50%);
-	transform: translateX(-50%);
+	top : 0;
+	transform: translate(-50%,-50%);
+}
+.footer {
+	width : 100%;
+	height : 240px;
+	background-color: blue;
 }
 
-.card-gallery {
-
+[class^="card"]{
+	height : 216px;
+	margin-bottom :24px;
+	background-color: #bbb;
 }
