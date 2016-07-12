@@ -1,0 +1,21 @@
+.header {
+	height: 80px;
+	background-color: #ebc;
+}
+
+.height-half {height : 60px; background-color: orange}
+.height-1 { height : 120px; background-color: #feb;}
+.height-2 { height : 240px; background-color: #fef;}
+.height-3 { height : 360px; background-color: #feb;}
+.height-4 { height : 480px; background-color : #ddd;}
+.height-5 { height : 600px;}
+.height-6 { height : 720px; }
+.height-7 { height : 840px; }
+.height-8 { height : 960px; }
+
+.grid>div {
+	border : solid black 1px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

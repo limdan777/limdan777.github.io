@@ -1,0 +1,103 @@
+/*160([unit 130]+ gutter(15)) 8 columns
+base-font-size : 0.9375 rem (15px)
+base-leading-ratio : 1.5 // 15px* 1.5 = 22.5px
+gutter - direction :after;//margin- right 사용.*/
+
+/*overlay grid guidline module*/
+.grid-container::before{
+	content :'';
+	position : absolute;
+	z-index : 10000;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100vh;
+	background : hsla(60,50%,50%,0.3);
+	background : 
+	linear-gradient(90deg, hsla(0,50%,50%,0.6) 81%, transparent 81%), 
+	linear-gradient(transparent 26px, #26923f 26px);
+	background-size:
+		160px 1px,
+		1px 1.6875rem;
+}
+
+.grid-container.show-grid-before::before{
+
+}
+.grid-container.show-grid-split::after{
+	
+}
+
+
+/*grid container module*/
+.grid-container {
+	position : relative;
+	width :1250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*grid module*/
+.grid::after{
+	content:'';
+	display :block;
+	clear: both;
+}
+
+/*unit module*/
+[class*="unit-"] { float : left; margin-right: 30px; }
+[class*="unit-"]:last-child, .last, .omega{margin-right : 0;}
+
+.unit-1 { width : 130px; }
+.unit-2 { width : 290px; }
+.unit-3 { width : 450px; }
+.unit-4 { width : 610px; }
+.unit-5 { width : 770px; }
+.unit-6 { width : 930px; }
+.unit-7 { width : 1090px; }
+.unit-8 { width : 1250px; }
+
+/*push,pull,module*/
+.grid [class*="push-"] {position : relative;}
+.grid [class*="pull-"] {position : relative;}
+
+.push-1 { left : 160px;}
+.push-2 { left: 320px;}
+.push-3 { left: 480px;}
+.push-4 { left: 640px;}
+.push-5 { left: 800px;}
+.push-6 { left: 960px;}
+.push-7 { left: 1120px;}
+.push-8 { left: 1280px;}
+
+.pull-1 { right : 160px;}
+.pull-2 { right : 320px;}
+.pull-3 { right : 480px;}
+.pull-4 { right : 640px;}
+.pull-5 { right : 800px;}
+.pull-6 { right : 960px;}
+.pull-7 { right : 1120px;}
+.pull-8 { right : 1280px;}
+
+/*
+prefix, suffix module
+float를 써서 실제로 밀어내는 것.
+*/
+
+.prefix-1 {margin-left: 160px;}
+.prefix-2 {margin-left: 320px;}
+.prefix-3 {margin-left: 480px;}
+.prefix-4 {margin-left: 640px;}
+.prefix-5 {margin-left: 800px;}
+.prefix-6 {margin-left: 960px;}
+.prefix-7 {margin-left: 1120px;}
+.prefix-8 {margin-left: 1280px;}
+
+.suffix-1 {margin-left: 160px;}
+.suffix-2 {margin-left: 320px;}
+.suffix-3 {margin-left: 480px;}
+.suffix-4 {margin-left: 640px;}
+.suffix-5 {margin-left: 800px;}
+.suffix-6 {margin-left: 960px;}
+.suffix-7 {margin-left: 1120px;}
+.suffix-8 {margin-left: 1280px;}

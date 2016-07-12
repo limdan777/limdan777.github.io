@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>CSS3 버튼 이펙트</title>
+  <link rel="stylesheet" href="../Resources/effects/button-effects.css">
+  <style>
+    .wrapper{
+      margin : 4rem;
+      text-align : center;
+    }
+
+    button {
+      margin : 3rem;
+    }
+
+    .kung-fu-panda {
+      position :relative;
+      top: -250px;
+      z-index:1000;
+      transform-origin : 10px 10px;
+      transform: translateY(-113px) scale(0.5) rotate(41deg);
+      animation : holdOn 4s infinite alternate cubic-bezier(0.68,0.18,0.13,0.73);
+    }
+
+    @keyframes holdOn{
+      0%{
+        transform : translateY(-113px) scale(0.5) rotate(20deg);
+      }
+      50%{
+        transform: translateY(-113px) scale(0.5) rotate(80deg);
+      }
+      100%{
+        transform: translateY(-113px) scale(0.5) rotate(20deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- slide from left -->
+    <button type="button" class="button slide-from-left button-roundest ">SLIDE FROM LEFT</button>
+    <!-- slide from right -->
+    <button type="button" class="button slide-from-right button-roundest">SLIDE FROM RIGHT</button>
+    <!-- slide from top -->
+     <button type="button" class="button slide-from-top button-roundest">SLIDE FROM TOP</button>
+    <!-- slide from bottom -->
+    <button type="button" class="button slide-from-bottom button-roundest">SLIDE FROM BOTTOM</button>
+    
+    <!-- grow rectangle -->
+    <button type="button" class="button grow-rectangle button-round">GROW RECTANGLE</button>
+    <!-- grow ellipse -->
+    <button type="button" class="button grow-ellipse button-round">GROW ELLIPSE</button>
+    <!-- grow circle -->
+    <button type="button" class="button grow-circle button-round">GROW CIRCLE</button>
+    <!-- grow skew 45deg -->
+    <button type="button" class="button grow-scew button-round">GROW SCEW</button>
+    <!-- grow skew -45deg -->
+    <button type="button" class="button grow-scew-45 button-round">GROW -45 SCEW</button>
+    <!-- grow spin cw -->
+    <button type="button" class="button grow-spin-cw button-round">GROW SPIN CW</button>
+    <!-- grow spin ccw -->
+    <button type="button" class="button grow-spin-ccw button-round ">GROW SPIN CCW</button>
+
+    <img class="kung-fu-panda" src="images/panda.png" alt="" height=200px>
+  </div>
+
+</body>
+</html>
