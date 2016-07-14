@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 멀티 컬럼 레이아웃 디자인</title>
+	<link rel="stylesheet" href="../Resources/grid-system/grid-fluid(flexable).css">
+	<link rel="stylesheet" href="../Resources/initialization/normalize.css">
+	<style>
+		.column-container {
+			max-width : 56.25rem;
+			margin : 3rem auto;
+			font-family : "Spoqa Han Sans";
+		}
+
+		.column-container::after {
+			content : '';
+			display : block;
+			clear : both;
+		}
+
+		.column {
+			/*box-sizing: border-box;
+			float : left;
+			width :33.3333%;*/
+			padding-right: 1.5rem;
+			line-height : 1.5rem;
+		}
+
+		.column:last-child{
+			padding-right: 0;
+		}
+
+		.column p{
+			margin-bottom : 1.5rem;
+		}
+		.no-multi-columns{
+			background-color : #bbb;
+		}
+		
+		.use-multi-columns{
+			line-height:1.5rem;
+			color : #6c6045;
+			/*CSS3 Multi Columns*/
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+			
+			-webkit-column-gap:1.5rem;
+			-moz-column-gap:1.5rem;
+			column-gap:1.5rem;
+						/*사이에 수직 선*/
+			
+			column-rule : 1px solid #b7b4ab;
+		}
+		.use-multi-columns p {
+			margin-bottom : 1.5rem;
+			margin-top: 0rem;
+			text-align:justify;
+			letter-spacing : -0.045em;
+			word-spacing : 0.15em;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="column-container no-multi-columns">
+		<div class="unit-1-3 column">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ipsa ad. Placeat ut sapiente enim. Consectetur quo est aliquam quidem facere nulla, eos laboriosam, non facilis. Placeat maiores incidunt doloremque, consequatur fugiat odit non ullam itaque explicabo similique distinctio ad dolor eos assumenda ducimus eum voluptatem ut, consequuntur rerum, aliquam. Fugiat, praesentium! Neque odit at, fugit dolor, consequuntur veritatis blanditiis nisi voluptatem incidunt, provident fugiat praesentium. Vitae dolore veniam tenetur.</p>
+			<p>Laborum quam saepe odit sunt sit officiis eos possimus. Sequi culpa, ab quam amet! Quaerat blanditiis officiis accusantium dolor placeat reprehenderit, libero, laborum facilis recusandae est hic consectetur illo similique eos atque numquam ut. Aperiam vel optio quo voluptatem reiciendis aliquid incidunt distinctio recusandae facilis dolor dolorum hic, rerum repellendus vitae ratione quod quis, omnis commodi adipisci ipsum eveniet laboriosam, harum veniam. Esse et quibusdam repudiandae at molestiae vel, laborum.</p>
+		</div>
+		<div class="unit-1-3 column">
+			<p>Facilis accusantium deserunt quia vel nihil, autem nulla consequuntur eos asperiores excepturi exercitationem quo, minima rem, at odio molestias porro! Molestias a odio enim illo eveniet excepturi doloremque ullam non, itaque officiis. Nesciunt in expedita modi placeat hic voluptatibus omnis quos molestiae eligendi odio tenetur animi iure cupiditate, cum dolores, eum autem ut! Impedit ex nihil, repellendus voluptate. Voluptates expedita nisi necessitatibus vero obcaecati perspiciatis tenetur tempore earum consequuntur nemo.</p>
+			<p>Libero perspiciatis ullam, quis earum consectetur. Atque dolorum dolor assumenda perspiciatis accusamus consectetur, libero, nihil iste alias dicta pariatur beatae explicabo, natus saepe excepturi quos sequi obcaecati vitae! Inventore, assumenda quas id exercitationem velit iste corporis sequi cupiditate! Maiores et atque earum blanditiis commodi ea, harum eos inventore cumque, exercitationem, in voluptate ipsum vel animi natus iure. Impedit a necessitatibus consequatur consectetur aliquam adipisci assumenda quam ipsam, quibusdam tenetur dicta.</p>
+		</div>
+		<div class="unit-1-3 column">
+			<p>Minus, tempore esse perferendis libero, corporis beatae placeat earum alias officiis. Dolorum incidunt nostrum id sit? Adipisci cupiditate et alias aperiam dignissimos, dolorem ullam, sint provident perferendis illo maxime doloremque quae perspiciatis! Nihil delectus, fugiat molestias. Mollitia a nostrum reprehenderit consequatur ea laborum, quasi ipsa molestias, veniam, et impedit fugit deleniti, accusamus dolorem provident. Deleniti a nulla, quos excepturi sint enim tenetur illo, illum incidunt! Quo nostrum, obcaecati distinctio eum!</p>
+			<p>Molestias distinctio, nam in dolor reprehenderit, mollitia est quis eos consectetur nulla, assumenda totam deserunt rem, voluptatibus vero et aliquid iure nihil quod. Est quaerat cum, aut reprehenderit quidem, dignissimos non quod nobis magni voluptate eaque quae, sit perferendis obcaecati beatae quasi dolorem dolorum explicabo error! Fugiat fuga omnis vero facere natus repudiandae iste optio ratione alias maxime nihil in, nisi voluptatum, molestiae quaerat nostrum consequuntur magnam laboriosam veniam suscipit.</p>
+		</div>	
+	</div>
+	<div class="column-container use-multi-columns">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi distinctio quam dolorum at, minus tempora ratione, eligendi voluptate quo inventore. Quae ipsa sapiente reiciendis voluptate incidunt, cupiditate laudantium voluptates laboriosam, illo consequatur earum reprehenderit odit eum pariatur officia magnam debitis fuga ad voluptatem mollitia nobis. Ullam necessitatibus voluptate nemo odit aliquam facere ipsam iusto modi! Asperiores laboriosam, illo nostrum quasi mollitia quidem excepturi tenetur, molestiae at debitis modi voluptates eaque!</p>
+		<p>Fugiat laborum neque odit eveniet delectus autem ducimus, vel impedit necessitatibus atque ullam, magnam officia deleniti voluptatum optio praesentium iusto quasi, iure pariatur repellendus fuga earum? Eum sequi fugit, nam eligendi quas provident. Expedita voluptate asperiores perspiciatis omnis ipsam, nihil accusamus tempora veniam esse totam, ipsa molestias fugit, vitae eos quisquam deleniti delectus nam laborum doloribus recusandae, ex animi. Qui sit harum eligendi sed voluptatem odit maiores ab aliquid numquam?</p>
+		<p>Dolores ipsa atque quo officiis asperiores corporis distinctio rem dolorum omnis officia, voluptatum incidunt modi! Reiciendis illo veritatis doloribus tempore, libero inventore culpa, quas voluptatem commodi? Officiis doloribus nisi ducimus quidem earum non sint eius, suscipit laboriosam repellat necessitatibus facere aut explicabo sequi, ad numquam distinctio cupiditate perferendis dolorum neque? Exercitationem natus ullam rerum consequatur deleniti accusamus nemo. Odit natus accusantium sint a quos enim rem, eveniet voluptatibus optio quas.</p>
+		<p>Qui, fugit rerum cumque a dolor labore quaerat autem alias distinctio deserunt sequi laudantium non quisquam minus laboriosam ipsam iste ex libero velit earum eum, nisi adipisci. Quas doloribus maiores repellat voluptas, dignissimos totam et sed iure odit ullam. Nostrum delectus culpa natus odio? Nam, obcaecati error ea neque, eveniet ipsam voluptas odio ratione ullam labore distinctio facilis tenetur quas harum deserunt accusantium optio illum, temporibus officiis doloremque repudiandae! Fuga.</p>
+		<p>Nulla obcaecati ab sequi placeat, dignissimos esse ad similique! Expedita nemo quibusdam fugit maxime repudiandae laboriosam doloribus quaerat, fuga odio repellat odit numquam praesentium incidunt cum in rem! Quas aspernatur iste eos pariatur aliquid dolorum! A non qui autem maxime minus repellendus maiores deleniti ducimus, nostrum corrupti quos accusamus deserunt alias beatae illo quod ea exercitationem iste inventore esse obcaecati? Dolorem doloribus eveniet est ducimus fugiat maxime commodi inventore quod.</p>
+		<p>Dignissimos sapiente, iure, molestias mollitia eos soluta ratione quasi maiores accusantium repellendus et voluptates modi debitis ea, provident quos repellat. Temporibus eligendi doloremque veniam iste voluptatum rem repellat sequi aperiam alias quas, aut commodi consectetur blanditiis beatae. Eos nostrum quae cum culpa iusto ipsam qui, unde iure natus earum ducimus fugiat esse odit rerum saepe libero repellendus beatae impedit a error atque, hic ullam! Vitae laudantium quia tempore labore doloribus!</p>
+	</div>
+
+</body>
+</html>

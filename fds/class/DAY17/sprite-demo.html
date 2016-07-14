@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Sprite Animation DEMO</title>
+	<style>
+		body{
+			margin : 4.5rem;
+		}
+		.sprite-anim-demo {
+			border : 1px solid #999;
+			height : 182px;
+			width :120px;
+			background: url("images/css-sprite-animation-steps-adam.png") no-repeat;
+			animation : ziglezigle steps(7) 1s infinite;
+		}
+		
+		.sprite-anim-demo2 {
+			border : 1px solid red;
+			height : 110px;
+			width :70px;
+			background : url("images/css-sprite-animation-steps-ken-tatsumaki-senpuu-kyaku.png") no-repeat;
+			animation : zigle2 steps(12) 2s infinite;
+		}
+
+		@keyframes ziglezigle {
+			0% { background-position-x : 0; }
+			100% { background-position-x : -840px; }
+		}
+
+		@keyframes zigle2{
+			0% {background-position-x : 0;}
+			100% { background-position-x : -840px; }
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="sprite-anim-demo"></div>
+	<div class="sprite-anim-demo2"></div>
+</body>
+</html>
