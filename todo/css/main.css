@@ -2,6 +2,7 @@
 /*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
 @import url("../Resources/webfonts/font-BMDOHYEON-wallel.css");
 
+
 .grid-container{
 	margin-right: auto;
 	margin-left: auto;
@@ -67,9 +68,16 @@
 	line-height: 3;
 	box-sizing: border-box;
 	border-bottom : 1px solid black;
-	background : #eee;
+	background : #fff;
+}
+[class*="day1-"]{
+	border-top : 1px solid black;
 }
 
 [class$="one"]{
 	border-right : 1px solid black;
+}
+
+.prize-image {
+	height : 4.5rem;
 }
