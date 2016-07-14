@@ -119,8 +119,8 @@ a[class*="underline-"]::before{
 	content : '';
 	position : absolute;
 	top :100%;
-	transition : all 0.3s;
-	border-bottom : 2px solid currentColor;
+	transition : all 0.25s;
+	border-bottom : 1px solid currentColor;
 }
 a.underline-from-left::before{
 	left  : 0;
