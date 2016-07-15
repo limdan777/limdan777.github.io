@@ -22,11 +22,19 @@
 	border-radius : 1rem;
 }
 
-.add-photo{
-	position :absolute;
-	right : 0;
-	top : 0;
-	width : 30px;
+button {
+	border-radius : 15px;
+	width :35px;
+	height :35px;
+}
+
+button.add-photo-button{
+	position : absolute;
+	right : 5%;
+	top :50%;
+	transform: translateY(-50%);
+	background-size: 20%;
+	background : url(../images/plus.png);
 }
 
 .title {
@@ -108,13 +116,6 @@
 	border-top : 1px solid black;
 }
 
-.add-photo-button {
-	width : 20px;
-	position : absolute;
-	right : 5%;
-	top : 50%;
-	transform : translateY(-50%);
-}
 
 [class*="day1-"]::before {
 	font-weight : normal;

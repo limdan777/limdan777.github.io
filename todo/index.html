@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>BET</title>
+	<script type="text/javascript" src="js/jquery-2.4.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="Resources/initialization/reset.css">
 	<link rel="stylesheet" href="Resources/common.css">
 	<link rel="stylesheet" href="Resources/initialization/ress.min.css">
 	<link rel="stylesheet" href="Resources/grid-system/grid-static-960-8.css">
 	<link href="https://cdn.rawgit.com/singihae/Webfonts/master/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="css/modal.css">
+	
 </head>
 <body >
 	<div class="wrapper">
@@ -20,14 +25,12 @@
 			<div class="player1">
 				<div class="name-1">
 					<img class="profile-image" src="images/dahyun.png" alt="player1-profile">
-
 					<div class="profile-name">임다현</div>	
 				</div>
 				<ul class="list-player1">
 					<li class="day1-one">
-						<button>
-							<input class="add-photo" type="file" accept="image/*" capture="camera">
-							<!-- <img class="add-photo-button" src="images/plus.png" alt="add photo"> -->
+						<button class="add-photo-button">
+							<!-- <input class="add-photo" type="file" accept="image/*" capture="camera"> -->
 						</button>
 					</li>
 					<li class="day2-one"></li>
@@ -54,10 +57,38 @@
 				</ul>
 			</div>
 		</div>
+
+
 		<div class="prize">
 			상품 : <a href="http://with.gsshop.com/prd/prd.gs?prdid=19600277&ab=df&gsid=srcheshop-result&lseq=395029&kwd=%EC%95%84%ED%8A%B8%EB%B0%95%EC%8A%A4%ED%94%BC%EA%B7%9C%EC%96%B4"><img class="prize-image" src="images/prize.jpg" alt="prize image"></a>
 		</div>
+		
 
+		<!-- Modal -->
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">x</span>
+				<p>This should be some texts</p>
+			</div>
+		</div>
+	
 	</div>
+<script>
+	var modal = document.getElementById('myModal');
+	var btn = document.getElementsByClassName('add-photo-button')[0];
+	var span =document.getElementsByClassName('close')[0];
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+	span.onclick = function(){
+		modal.style.display = "none";
+	}
+	window.onclick = function(event){
+		if (event.target==modal) {
+			modal.style.display = "none";
+		}
+	}
+</script>
+
 </body>
 </html>
