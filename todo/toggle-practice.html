@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>toggle</title>
+	<style>
+		.divs {
+			display : none;
+		}
+
+		a:hover + .divs {
+			display : block;
+			position : absolute;
+			background-color :purple;
+			color : #ffffff;
+			width :200px;
+			height : 200px;
+		}
+		.divs:after{
+			content : "";
+			position :absolute;
+			display : block;
+			width :0;
+			height : 0;
+			border-bottom: 20px solid purple;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			margin :-39px 50px 10px 10px;
+
+		}
+	</style>
+</head>
+<body>
+	<a href="#"><img src="someIconsButtons.png" alt="someIcon" width=100px height=40px></a>
+	<div class="divs">
+		stuff here...
+	</div>
+</body>
+</html>
