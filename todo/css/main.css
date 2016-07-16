@@ -33,8 +33,12 @@ button.add-photo-button{
 	right : 5%;
 	top :50%;
 	transform: translateY(-50%);
-	background-size: 20%;
-	background : url(../images/plus.png);
+	line-height: 35px;
+}
+
+.plus-button {
+	vertical-align: middle;
+	width : 25px;	
 }
 
 .title {
